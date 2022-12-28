@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
-import connection from '../connection.js'
-import fishes from '../models/fish.js'
-import data from '../data/fish.json' assert {type: 'json'}
+import connection from './connection.js'
+import fishes from './models/fish.js'
+import data from './data/fish.json' assert {type: 'json'}
 
 
 let fishData = data.map(item => {
