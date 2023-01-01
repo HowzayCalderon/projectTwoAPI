@@ -47,15 +47,15 @@ export const updateFish = async (req, res) => {
     }
 }
 
-export const deleteCharacter = async (req, res) => {
+export const deleteFish = async (req, res) => {
     try{
         const { id } = req.params;
         const deleted = await fishes.findByIdAndDelete(id);
 
         if (deleted) {
-            return res.status(200).send("Character deleted!");
+            return res.status(200).send("Fish deleted!");
         }
-        throw new Error("Character not found!")
+        throw new Error("Fish not found!")
     }catch (error) {
         console.error(error);
         res.status(500).json({error: error.message})

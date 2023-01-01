@@ -7,6 +7,6 @@ router.get('/', controllers.getFishies);
 router.get('/:id', controllers.getFish)
 router.post('/', controllers.createFish)
 router.put('/:id', controllers.updateFish)
-router.delete('/:id', controllers.deleteCharacter)
+router.delete('/:id', controllers.deleteFish)
 
 export default router;
